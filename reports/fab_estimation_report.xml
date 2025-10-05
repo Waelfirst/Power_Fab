@@ -1,0 +1,10 @@
+<odoo>
+    <report
+        id="action_report_fab_estimation"
+        model="fab.estimation"
+        string="Estimation Report"
+        report_type="qweb-pdf"
+        name="power_fab_office.report_fab_estimation_document"
+        file="power_fab_office.report_fab_estimation_document"
+    />
+</odoo>

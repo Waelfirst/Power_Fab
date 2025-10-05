@@ -1,0 +1,11 @@
+<odoo>
+    <data>
+        <record id="demo_fab_project_1" model="fab.project">
+            <field name="name">PROJ/00001</field>
+            <field name="project_name">Demo Project</field>
+            <field name="customer_id" ref="base.res_partner_1"/>
+            <field name="description">Demo fabrication project</field>
+            <field name="stage">new</field>
+        </record>
+    </data>
+</odoo>

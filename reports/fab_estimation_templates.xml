@@ -1,0 +1,32 @@
+<odoo>
+    <template id="report_fab_estimation_document">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="doc">
+                <h1>Estimation: <t t-esc="doc.name"/></h1>
+                <p>Project: <t t-esc="doc.project_id.name"/></p>
+                <table class="table table-sm">
+                    <thead>
+                        <tr>
+                            <th>Part</th>
+                            <th>Material</th>
+                            <th>Qty</th>
+                            <th>UoM</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr t-foreach="doc.estimation_line_ids" t-as="line">
+                            <td><t t-esc="line.part_name"/></td>
+                            <td><t t-esc="line.material_id.name"/></td>
+                            <td><t t-esc="line.quantity"/></td>
+                            <td><t t-esc="line.uom_id.name"/></td>
+                            <td><t t-esc="line.selling_price"/></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>Total Cost: <t t-esc="doc.total_cost"/></p>
+                <p>Selling Price: <t t-esc="doc.selling_price"/></p>
+            </t>
+        </t>
+    </template>
+</odoo>

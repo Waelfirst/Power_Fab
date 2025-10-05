@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_fab_project_user,fab.project user,model_fab_project,base.group_user,1,1,1,1
+access_fab_estimation_user,fab.estimation user,model_fab_estimation,base.group_user,1,1,1,1
+access_fab_estimation_line_user,fab.estimation.line user,model_fab_estimation_line,base.group_user,1,1,1,1
+access_fab_order_user,fab.order user,model_fab_order,base.group_user,1,1,1,1
+access_fab_material_user,fab.material user,model_fab_material,base.group_user,1,1,1,1
+access_fab_team_user,fab.team user,model_fab_team,base.group_user,1,1,1,1

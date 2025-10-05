@@ -1,0 +1,19 @@
+<odoo>
+    <record id="view_partner_form_fab" model="ir.ui.view">
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <notebook position="inside">
+                <page string="Fabrication Projects">
+                    <field name="fab_project_ids">
+                        <tree>
+                            <field name="name"/>
+                            <field name="project_name"/>
+                            <field name="stage"/>
+                        </tree>
+                    </field>
+                </page>
+            </notebook>
+        </field>
+    </record>
+</odoo>

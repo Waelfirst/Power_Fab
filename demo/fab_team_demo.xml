@@ -1,0 +1,7 @@
+<odoo>
+    <data>
+        <record id="demo_fab_team_1" model="fab.team">
+            <field name="name">Team Alpha</field>
+        </record>
+    </data>
+</odoo>

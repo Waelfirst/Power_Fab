@@ -1,0 +1,54 @@
+<odoo>
+    <record id="view_fab_project_tree" model="ir.ui.view">
+        <field name="model">fab.project</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="project_name"/>
+                <field name="customer_id"/>
+                <field name="stage"/>
+            </tree>
+        </field>
+    </record>
+    <record id="view_fab_project_form" model="ir.ui.view">
+        <field name="model">fab.project</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <field name="stage" widget="statusbar"/>
+                </header>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="project_name"/>
+                        <field name="customer_id"/>
+                        <field name="description"/>
+                    </group>
+                    <group>
+                        <field name="estimation_id"/>
+                        <field name="sale_order_id"/>
+                    </group>
+                    <notebook>
+                        <page string="Fabrication Orders">
+                            <field name="fab_order_ids">
+                                <tree editable="bottom">
+                                    <field name="name"/>
+                                    <field name="part_name"/>
+                                    <field name="material_id"/>
+                                    <field name="quantity"/>
+                                    <field name="uom_id"/>
+                                    <field name="state"/>
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="action_fab_project" model="ir.actions.act_window">
+        <field name="name">Fabrication Projects</field>
+        <field name="res_model">fab.project</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>

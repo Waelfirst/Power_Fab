@@ -1,0 +1,11 @@
+<odoo>
+    <data>
+        <record id="demo_material_copper" model="fab.material">
+            <field name="name">Copper</field>
+            <field name="code">COP</field>
+            <field name="description">Copper material</field>
+            <field name="uom_id" ref="uom.product_uom_kgm"/>
+            <field name="cost">20</field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,8 @@
+<odoo>
+    <menuitem id="menu_power_fab_office_root" name="Power Fab Office" sequence="10"/>
+    <menuitem id="menu_fab_project" name="Projects" parent="menu_power_fab_office_root" sequence="20" action="action_fab_project"/>
+    <menuitem id="menu_fab_estimation" name="Estimations" parent="menu_power_fab_office_root" sequence="30" action="action_fab_estimation"/>
+    <menuitem id="menu_fab_order" name="Fabrication Orders" parent="menu_power_fab_office_root" sequence="40" action="action_fab_order"/>
+    <menuitem id="menu_fab_material" name="Materials" parent="menu_power_fab_office_root" sequence="50" action="action_fab_material"/>
+    <menuitem id="menu_fab_team" name="Teams" parent="menu_power_fab_office_root" sequence="60" action="action_fab_team"/>
+</odoo>

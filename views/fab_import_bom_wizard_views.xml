@@ -1,0 +1,22 @@
+<odoo>
+    <record id="view_fab_import_bom_wizard_form" model="ir.ui.view">
+        <field name="model">fab.import.bom.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Import BoM from Excel">
+                <group>
+                    <field name="file" filename="filename"/>
+                </group>
+                <footer>
+                    <button name="action_import" type="object" string="Import" class="btn-primary"/>
+                    <button string="Cancel" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+    <act_window id="action_fab_import_bom_wizard"
+                name="Import BoM from Excel"
+                res_model="fab.import.bom.wizard"
+                view_mode="form"
+                target="new"
+                context="{'default_estimation_id': active_id}"/>
+</odoo>

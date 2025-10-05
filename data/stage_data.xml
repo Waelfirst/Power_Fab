@@ -1,0 +1,5 @@
+<odoo>
+    <data noupdate="1">
+        <!-- Define project, estimation, fabrication stages if needed for kanban/statusbars -->
+    </data>
+</odoo>

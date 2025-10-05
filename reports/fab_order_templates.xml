@@ -1,0 +1,14 @@
+<odoo>
+    <template id="report_fab_order_document">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="doc">
+                <h1>Fabrication Order: <t t-esc="doc.name"/></h1>
+                <p>Project: <t t-esc="doc.project_id.name"/></p>
+                <p>Part: <t t-esc="doc.part_name"/></p>
+                <p>Material: <t t-esc="doc.material_id.name"/></p>
+                <p>Quantity: <t t-esc="doc.quantity"/> <t t-esc="doc.uom_id.name"/></p>
+                <p>Status: <t t-esc="doc.state"/></p>
+            </t>
+        </t>
+    </template>
+</odoo>

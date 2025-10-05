@@ -1,0 +1,30 @@
+<odoo>
+    <record id="view_fab_team_tree" model="ir.ui.view">
+        <field name="model">fab.team</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="leader_id"/>
+            </tree>
+        </field>
+    </record>
+    <record id="view_fab_team_form" model="ir.ui.view">
+        <field name="model">fab.team</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="leader_id"/>
+                        <field name="members"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="action_fab_team" model="ir.actions.act_window">
+        <field name="name">Teams</field>
+        <field name="res_model">fab.team</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>

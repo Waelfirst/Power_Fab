@@ -1,0 +1,9 @@
+<odoo>
+    <data>
+        <!-- Approval group -->
+        <record id="group_fab_estimation_approver" model="res.groups">
+            <field name="name">Estimation Approver</field>
+            <field name="category_id" ref="base.module_category_manufacturing"/>
+        </record>
+    </data>
+</odoo>

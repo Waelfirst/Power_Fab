@@ -1,0 +1,6 @@
+<odoo>
+    <data noupdate="1">
+        <!-- Example: add more UOMs as needed -->
+        <!-- Odoo's uom module already provides basic UOMs -->
+    </data>
+</odoo>
